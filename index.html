@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="heading">Weather app</h1>
+      <div class="main-button">
+        <div class="weather-button button-basic">Your Weather</div>
+        <div class="search-button button-basic">Search Weather</div>
+      </div>
+
+      <div class="smart-work">
+        <h4>You're fantastic! Go ahead and click on 'Your Weather or Search Weather' above.</h4>
+      </div>
+
+      <div class="loading-screen">
+        <img src="assets/loading.gif" alt="" width="100">
+        <p>Please wait...</p>
+      </div>
+
+      <div class="access active">
+        <img src="assets/location.png" alt="" width="80rem" />
+        <h2>Grant Location Access</h2>
+        <p>Allow Access To Get Weather Information</p>
+        <button class="grant-button">GRANT ACCESS</button>
+      </div>
+      <div class="search-weather">
+        <form class="input-search">
+          <input
+            type="text"
+            placeholder="Search for city ..."
+            class="text-input"
+          />
+          <div class="color-search">
+            <img src="assets/search.png" alt="search" class="search-img" />
+          </form>
+        </div>
+      </div>
+      <div class="container">
+        <div class="user-location">
+          <h3 class="city-name"></h3>
+          <img class="county-img" />
+        </div>
+        <p class="weather-type"></p>
+        <img src="" alt="" class="weather-typeImg" />
+        <h3 class="temprature">22.54 °C</h3>
+        <div class="weather-box">
+          <div class="weather-cast">
+            <img src="assets/wind.png" alt="" width="50"/>
+            <p class="common-stru">windspeed</p>
+            <p class="windspd common-stru"></p>
+          </div>
+          <div class="weather-cast">
+            <img src="assets/humidity.png" alt="" width="50"/>
+            <p class="common-stru">humidity</p>
+            <p class="humid common-stru"></p>
+          </div>
+          <div class="weather-cast">
+            <img src="assets/cloud.png" alt="" width="50"/>
+            <p class="common-stru">clouds</p>
+            <p class="clouds common-stru"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+  </body>
+</html>
